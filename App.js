@@ -10,6 +10,7 @@ import React from 'react';
 import type {Node} from 'react';
 import {Text, SafeAreaView} from 'react-native';
 import HomeScreen from './src/screens/home';
+import Post from './src/components/Post';
 const App: () => Node = () => {
   return (
     <SafeAreaView>
