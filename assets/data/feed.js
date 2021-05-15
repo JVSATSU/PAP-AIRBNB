@@ -1,0 +1,63 @@
+export default [
+    {
+        id: '0',
+        image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
+        tipo: 'Private Room',
+        title: 'Bright room in the heart of the city',
+        cama: 2,
+        quartos: 3,
+        antpreco: 25,
+        novpreco: 20,
+        precottl: 120,
+        coordinate: {
+            latitude: 28.3915637,
+            longitude: -16.6291304,
+        },
+    },
+    {
+        id: '1',
+        image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg',
+        tipo: 'Entire Flat',
+        title: 'NEW lux. apartment in the center of Santa Cruz',
+        cama: 3,
+        quartos: 2,
+        antpreco: 76,
+        novpreco: 65,
+        precottl: 390,
+        coordinate: {
+            latitude: 28.4815637,
+            longitude: -16.2291304,
+        },
+    },
+    {
+        id: '2',
+        image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg',
+        tipo: 'Private Property',
+        title: 'Green House Santa Cruz',
+        cama: 2,
+        quartos: 1,
+        antpreco: 64,
+        novpreco: 55,
+        precottl: 330,
+        coordinate: {
+            latitude: 28.2515637,
+            longitude: -16.3991304,
+        },
+    },
+    {
+        id: '3',
+        image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg',
+        tipo: 'Entire Flat',
+        title: 'Typical canarian house',
+        cama: 4,
+        quartos: 3,
+        antpreco: 120,
+        novpreco: 100,
+        precottl: 600,
+        coordinate: {
+            latitude: 28.4815637,
+            longitude: -16.2991304,
+        },
+    },
+];
+
