@@ -6,7 +6,7 @@ const Post = (props) => {
     <View>
       <Text style={styles.container}>
         {/*Titulo*/}
-        <Image style={style.image} source={{uri: 'http'}}/>
+        <Image style={style.image} source={{uri: ''}}/>
         {/*Cama e Quartos*/}
         {/*Tipo e Descrição*/}
         {/*Preço antigo e Preço Novo*/}
