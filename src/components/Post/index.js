@@ -15,9 +15,9 @@ const Post = (props) => {
           </Text>
         {/*Preço antigo e Preço Novo*/}
           <Text style={styles.preco}>
-            <Text style={styles.apreco}>€36</Text>
-            <Text style={styles.npreco}>€29</Text>
-            /texto
+            <Text style={styles.apreco}>€36 </Text>
+            <Text style={styles.npreco}>€29 </Text>
+            / noite
           </Text>
         {/*Preço Total*/}
           <Text style={styles.precot}>€230 Total</Text>

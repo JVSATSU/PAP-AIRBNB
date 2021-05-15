@@ -15,16 +15,23 @@ const styles = StyleSheet.create({
     color: '#5b5b5b',
   },
   descricao: {
-    fontsize: 18,
+    fontSize: 18,
     lineHeight:  26,
   },
   preco: {
-    fontsize: 18,
+    fontSize: 18,
+    marginVertical: 10,
   },
   apreco: {
     color: '#5b5b5b',
+    textDecorationLine: 'line-through',
   },
-  npreco: {},
-  precot: {},
+  npreco: {
+    fontWeight: 'bold',
+  },
+  precot: {
+    color: '#5b5b5b',
+    textDecorationLine: 'underline',
+  },
 });
 export default styles;
