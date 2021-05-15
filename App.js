@@ -14,7 +14,8 @@ import Post from './src/components/Post';
 const App: () => Node = () => {
   return (
     <SafeAreaView>
-      <HomeScreen />
+      {/*<HomeScreen />*/}
+      <Post/>
     </SafeAreaView>
   );
 };
