@@ -12,6 +12,7 @@ import {Text, SafeAreaView} from 'react-native';
 import HomeScreen from './src/screens/home';
 import Post from './src/components/Post';
 import Feed from './assets/data/feed';
+import PaginaPesquisa from "./src/screens/pesquisa";
 
 const post1 = Feed[1];
 
@@ -19,8 +20,8 @@ const App: () => Node = () => {
   return (
     <SafeAreaView>
       {/*<HomeScreen />*/}
-      <Post post={post1}/>
-
+      {/*<Post post={post1} />*/}
+      <PaginaPesquisa/>
     </SafeAreaView>
   );
 };

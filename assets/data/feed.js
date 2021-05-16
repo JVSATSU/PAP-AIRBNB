@@ -2,8 +2,8 @@ export default [
     {
         id: '0',
         image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
-        tipo: 'Private Room',
-        title: 'Bright room in the heart of the city',
+        tipo: 'Quarto Privado',
+        title: 'Quarto claro no coração da cidade',
         cama: 2,
         quartos: 3,
         antpreco: 25,
@@ -17,8 +17,8 @@ export default [
     {
         id: '1',
         image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg',
-        tipo: 'Entire Flat',
-        title: 'NEW lux. apartment in the center of Santa Cruz',
+        tipo: 'Flat Completo',
+        title: 'Vovo Flat de Luxo no centro de Santa Cruz',
         cama: 3,
         quartos: 2,
         antpreco: 76,
@@ -32,8 +32,8 @@ export default [
     {
         id: '2',
         image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg',
-        tipo: 'Private Property',
-        title: 'Green House Santa Cruz',
+        tipo: 'Propriedade Privada',
+        title: 'Casa ecologica em Santa Cruz',
         cama: 2,
         quartos: 1,
         antpreco: 64,
@@ -47,8 +47,8 @@ export default [
     {
         id: '3',
         image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg',
-        tipo: 'Entire Flat',
-        title: 'Typical canarian house',
+        tipo: 'Flat Completo',
+        title: 'Tipica casa casariana',
         cama: 4,
         quartos: 3,
         antpreco: 120,
