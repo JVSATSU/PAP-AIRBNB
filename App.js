@@ -13,6 +13,7 @@ import HomeScreen from './src/screens/home';
 import Post from './src/components/Post';
 import Feed from './assets/data/feed';
 import PaginaPesquisa from "./src/screens/pesquisa";
+import PesquisaDestinoTela from "./src/screens/pesquisadestino";
 
 const post1 = Feed[1];
 
@@ -21,7 +22,8 @@ const App: () => Node = () => {
     <SafeAreaView>
       {/*<HomeScreen />*/}
       {/*<Post post={post1} />*/}
-      <PaginaPesquisa/>
+      {/*<PaginaPesquisa/>*/}
+      <PesquisaDestinoTela/>
     </SafeAreaView>
   );
 };
