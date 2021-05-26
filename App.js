@@ -15,16 +15,17 @@ import Feed from './assets/data/feed';
 import PaginaPesquisa from "./src/screens/pesquisa";
 import PesquisaDestinoTela from "./src/screens/pesquisadestino";
 import GuestTela from "./src/screens/guest";
+import 'react-native-gesture-handler';
 const post1 = Feed[1];
 
 const App: () => Node = () => {
   return (
     <SafeAreaView>
-      {/*<HomeScreen />*/}
+      <HomeScreen/>
       {/*<Post post={post1} />*/}
       {/*<PaginaPesquisa/>*/}
       {/*<PesquisaDestinoTela/>*/}
-      <GuestTela/>
+      {/*<GuestTela/>*/}
     </SafeAreaView>
   );
 };
