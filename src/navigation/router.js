@@ -13,13 +13,13 @@ const Router = (props) => {
 
     <NavigationContainer>
       <Stack.Navigator>
-          <Stack.Screen
+          {<Stack.Screen
             name={"Pesquisa Destino"}
             component={PesquisaDestinoTela}
             options={{
               title: 'Procure seu Destino'
             }}
-            />
+            />}
           <Stack.Screen
             name={"Pagina de Pesquisa"}
             component={GuestTela}
