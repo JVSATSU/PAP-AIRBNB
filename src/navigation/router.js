@@ -5,6 +5,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import PesquisaDestinoTela   from "../screens/pesquisadestino";
 import HomeScreen from "../screens/home";
 import GuestTela from "../screens/guest";
+import HomeTabNavigator from "./HomeTabNavigator";
+import PaginaPesquisa from "../screens/pesquisa";
 
 const Stack = createStackNavigator();
 
@@ -13,20 +15,29 @@ const Router = (props) => {
 
     <NavigationContainer>
       <Stack.Navigator>
-          {<Stack.Screen
-            name={"Pesquisa Destino"}
-            component={PesquisaDestinoTela}
+
+          <Stack.Screen
+            name={"Home"}
+            component={HomeTabNavigator}
             options={{
-              title: 'Procure seu Destino'
+              headerShown: false
             }}
             />}
           <Stack.Screen
-            name={"Pagina de Pesquisa"}
-            component={GuestTela}
+            name="PesquisaDestinoTela"
+            component={PesquisaDestinoTela}
             options={{
-              title: 'Quantos são?'
+              title: 'Para onde deseja ir?'
             }}
           />
+          <Stack.Screen
+              name={"Guests"}
+              component={GuestTela}
+              options={{
+                  title: 'Quantos são?'
+              }}
+          />
+
       </Stack.Navigator>
     </NavigationContainer>
 

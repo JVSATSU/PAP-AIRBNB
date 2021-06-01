@@ -15,11 +15,10 @@ import Feed from './assets/data/feed';
 import PaginaPesquisa from "./src/screens/pesquisa";
 import PesquisaDestinoTela from "./src/screens/pesquisadestino";
 import GuestTela from "./src/screens/guest";
-
 import 'react-native-gesture-handler';
-
 import Router from "./src/navigation/router";
 import HomeTabNavigator from "./src/navigation/HomeTabNavigator";
+import {StatusBar} from 'react-native';
 
 const post1 = Feed[1];
 
@@ -29,6 +28,7 @@ const App: () => Node = () => {
 
 
     <>
+      <StatusBar barStyle="dark-content"/>
       <HomeTabNavigator/>
     </>
 
