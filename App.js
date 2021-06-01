@@ -19,6 +19,7 @@ import GuestTela from "./src/screens/guest";
 import 'react-native-gesture-handler';
 
 import Router from "./src/navigation/router";
+import HomeTabNavigator from "./src/navigation/HomeTabNavigator";
 
 const post1 = Feed[1];
 
@@ -28,7 +29,7 @@ const App: () => Node = () => {
 
 
     <>
-      <Router/>
+      <HomeTabNavigator/>
     </>
 
   );
