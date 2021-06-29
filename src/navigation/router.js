@@ -15,14 +15,13 @@ const Router = (props) => {
 
     <NavigationContainer>
       <Stack.Navigator>
-
           <Stack.Screen
             name={"Home"}
             component={HomeTabNavigator}
             options={{
               headerShown: false
             }}
-            />}
+          />
           <Stack.Screen
             name="PesquisaDestinoTela"
             component={PesquisaDestinoTela}
@@ -37,7 +36,6 @@ const Router = (props) => {
                   title: 'Quantos são?'
               }}
           />
-
       </Stack.Navigator>
     </NavigationContainer>
 

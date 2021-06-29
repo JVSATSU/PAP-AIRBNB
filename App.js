@@ -29,7 +29,7 @@ const App: () => Node = () => {
 
     <>
       <StatusBar barStyle="dark-content"/>
-      <HomeTabNavigator/>
+      <Router />
     </>
 
   );

@@ -16,7 +16,7 @@ const Tab = createBottomTabNavigator();
 
 const HomeTabNavigator = (props) => {
     return (
-        <NavigationContainer>
+        
             <Tab.Navigator
                 tabBarOptions={{
                     activeTintColor: '#f15454',
@@ -67,7 +67,7 @@ const HomeTabNavigator = (props) => {
                     }}
                 />
             </Tab.Navigator>
-        </NavigationContainer>
+        
     );
 };
 
