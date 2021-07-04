@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     margin: 20,
   },
   textInput: {
-    fontSize: 20,
+    fontSize: 30,
     marginBottom: 20,
   },
   row: {

@@ -4,33 +4,41 @@ import styles from './styles';
 import procuraResultados from '../../../assets/data/procura';
 import Entypo from 'react-native-vector-icons/Entypo';
 import {useNavigation} from '@react-navigation/native';
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import SugestaoRow from "./SugestaoRow";
+
 
 const PesquisaDestinoTela = (props) => {
 
-  const [inputText,setInputText] = useState();
+  
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
-      <TextInput
-        style={styles.textInput}
-        placeholder="Para onde voce vai?"
-        value={inputText}
-        onChangeText={setInputText}
-      />
 
+      <View style={{height: 500}}>
+      <GooglePlacesAutocomplete
+        placeholder='Para onde voce deseja ir?'
+        onPress={(data, details = null) => {
+          // 'details' is provided when fetchDetails = true
+          console.log(data, details);
+          navigation.navigate('Guests');
+        }}
+        fetchDetails
+        style={{
+          textInput: styles.textInput,
+        }}
 
-        <FlatList 
-          data={procuraResultados}
-          renderItem= {({item})=> (
-            <Pressable onPress={() => navigation.navigate('Guests')} style={styles.row}>
-             <View style={styles.iconContainer}>
-               <Entypo name={"location-pin"} size={35} />
-            </View>
-          <Text style={styles.destinotext}>{item.descricao}</Text>
-        </Pressable>
-        )} 
+        query={{
+          key: 'AIzaSyA11IyUmn7cWkXpnc4y63J6rN2e_sjd2pI',
+          language: 'pt',
+          types: '(cities)',
+        }}
+        suppressDefaultStyles
+        renderRow={(item) => <SugestaoRow item={item}/>}
+        
       />
+      </View>
     </View>
   );
 };
