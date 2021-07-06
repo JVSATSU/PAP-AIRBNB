@@ -15,7 +15,7 @@ const MarcadorCustom = props => {
           borderWidth: 2,
         }}>
         <Text
-          style={{color: isSelected ? 'white' : 'black', fontWeight: 'bold'}}>
+           style={{color: isSelected ? 'white' : 'black', fontWeight: 'bold'}}>
           €{price}
         </Text>
       </View>
