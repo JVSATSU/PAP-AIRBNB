@@ -3,10 +3,14 @@ import {View, Text} from 'react-native';
 import MapView, {Marker, PROVIDER_GOOGLE} from 'react-native-maps';
 import lugares from '../../../assets/data/feed';
 import MarcadorCustom from '../../components/marcador';
-import PostCarrossel from "../../components/PostCarrossel";
+import PostCarrossel from '../../components/PostCarrossel';
+import {FlatList} from 'react-native-gesture-handler';
+import useWindowDimensions from 'react-native/Libraries/Utilities/useWindowDimensions';
 
-const PesquisaMapa = () => {
+const Index = () => {
   const [LugarSelecionadoId, setLugarSelecionadoId] = useState(null);
+
+  const width = useWindowDimensions().width;
 
   return (
     <View>
@@ -28,11 +32,19 @@ const PesquisaMapa = () => {
           />
         ))}
       </MapView>
-      <View style={{position: 'absolute', bottom: 40}}>
-        <PostCarrossel post={lugares[0]} />
+      <View style={{position: 'absolute', bottom: 20}}>
+        <FlatList
+          data={lugares}
+          renderItem={({item}) => <PostCarrossel post={item} />}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          snapToInterval={width - 60}
+          snapToAlignment={'center'}
+          decelerationRate={'fast'}
+        />
       </View>
     </View>
   );
 };
 
-export default PesquisaMapa;
+export default Index;

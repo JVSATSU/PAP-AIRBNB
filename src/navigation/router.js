@@ -7,7 +7,7 @@ import HomeScreen from "../screens/home";
 import GuestTela from "../screens/guest";
 import HomeTabNavigator from "./HomeTabNavigator";
 import PaginaPesquisa from "../screens/pesquisa";
-import PesquisaMapa from "../screens/pesquisamapa/pesquisamapa";
+import Index from "../screens/pesquisamapa";
 
 const Stack = createStackNavigator();
 
@@ -18,7 +18,7 @@ const Router = (props) => {
       <Stack.Navigator>
           <Stack.Screen
             name={"Home"}
-            component={PesquisaMapa}
+            component={Index}
             options={{
               headerShown: false
             }}
