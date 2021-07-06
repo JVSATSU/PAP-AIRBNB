@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import MapView, {Marker, PROVIDER_GOOGLE} from 'react-native-maps';
 import lugares from '../../../assets/data/feed';
 import MarcadorCustom from '../../components/marcador';
+import PostCarrossel from "../../components/PostCarrossel";
 
 const PesquisaMapa = () => {
   const [LugarSelecionadoId, setLugarSelecionadoId] = useState(null);
@@ -27,6 +28,9 @@ const PesquisaMapa = () => {
           />
         ))}
       </MapView>
+      <View style={{position: 'absolute', bottom: 40}}>
+        <PostCarrossel post={lugares[0]} />
+      </View>
     </View>
   );
 };
