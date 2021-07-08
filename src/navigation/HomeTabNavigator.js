@@ -11,6 +11,7 @@ import Feather from "react-native-vector-icons/Feather";
 import EvilIcons from "react-native-vector-icons/EvilIcons";
 import {NavigationContainer} from "@react-navigation/native";
 import ExploreNavigator from "../navigation/ExploreNavigator";
+import PostScreen from "../screens/postscreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -66,6 +67,7 @@ const HomeTabNavigator = (props) => {
                         ),
                     }}
                 />
+
             </Tab.Navigator>
         
     );

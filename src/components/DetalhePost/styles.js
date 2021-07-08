@@ -2,41 +2,24 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    height: 120,
-    padding: 5,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 5,
-    },
-    shadowOpacity: 0.34,
-    shadowRadius: 6.27,
-
-    elevation: 10,
-
-  },
-  innerContainer: {
-    flexDirection: 'row',
-    backgroundColor: 'white',
-    borderRadius: 10,
-    overflow: 'hidden',
-
+    margin: 20,
   },
   image: {
-    height: '100%',
-    aspectRatio: 1,
+    width: '100%',
+    aspectRatio: 3 / 2,
     resizeMode: 'cover',
+    borderRadius: 10,
   },
   quartos: {
     marginVertical: 10,
     color: '#5b5b5b',
   },
   descricao: {
-    fontSize: 14,
-
+    fontSize: 18,
+    lineHeight: 26,
   },
   preco: {
-    fontSize: 16,
+    fontSize: 18,
     marginVertical: 10,
   },
   apreco: {
@@ -49,6 +32,12 @@ const styles = StyleSheet.create({
   precot: {
     color: '#5b5b5b',
     textDecorationLine: 'underline',
+  },
+  descricaol: {
+    marginVertical: 20,
+    fontSize: 16,
+    lineHeight: 24,
+    fontWeight: 'bold',
   },
 });
 export default styles;

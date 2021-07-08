@@ -14,8 +14,9 @@ const Index = () => {
   const mapa = useRef();
 
   const width = useWindowDimensions().width;
+  const centro = "center";
 
-  const viewConfig = useRef({itemVisiblePercentThreshold: 70});
+  const viewConfig = useRef({itemVisiblePercentThreshold: 70,minimumViewTime: 300});
   const onViewChanged = useRef(({viewableItems}) =>{
     if(viewableItems.length > 0){
       const LugarSelecionado = viewableItems[0].item;

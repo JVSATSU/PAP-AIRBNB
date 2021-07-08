@@ -8,6 +8,8 @@ import GuestTela from "../screens/guest";
 import HomeTabNavigator from "./HomeTabNavigator";
 import PaginaPesquisa from "../screens/pesquisa";
 import Index from "../screens/pesquisamapa";
+import PostScreen from "../screens/postscreen";
+import EvilIcons from "react-native-vector-icons/EvilIcons";
 
 const Stack = createStackNavigator();
 
@@ -18,7 +20,7 @@ const Router = (props) => {
       <Stack.Navigator>
           <Stack.Screen
             name={"Home"}
-            component={Index}
+            component={HomeTabNavigator}
             options={{
               headerShown: false
             }}
@@ -34,9 +36,17 @@ const Router = (props) => {
               name={"Guests"}
               component={GuestTela}
               options={{
-                  title: 'Quantos são?'
+                  title: 'Quantos pessoas são?'
               }}
           />
+          <Stack.Screen
+              name={"Posts"}
+              component={PostScreen}
+              options={{
+                  title: 'Sobre a acomodação'
+              }}
+          />
+
       </Stack.Navigator>
     </NavigationContainer>
 
