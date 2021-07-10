@@ -20,7 +20,7 @@ const HomeScreen = props => {
         <Text style={styles.title}>Vá Perto</Text>
         <Pressable
           style={styles.button}
-          onPress={() => console.warn('Btn Explore acionado')}>
+          onPress={() => navigation.navigate("Guests")}>
           <Text style={styles.buttontext}>Explore as redondezas</Text>
         </Pressable>
       </ImageBackground>

@@ -8,7 +8,7 @@ const post = lugares[0];
 const PostScreen = props => {
   const route = useRoute();
 
-  console.log(route.params);
+  const post = lugares.find(place => place.id === route.params.postId);
 
   return (
     <View>
