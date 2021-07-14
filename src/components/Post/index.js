@@ -1,10 +1,21 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Pressable } from "react-native";
 import styles from "./styles";
+import {useNavigation} from "@react-navigation/native";
+
+
+
 const Post = (props) => {
+  const navigation = useNavigation();
+
   const post = props.post;
+
+  const irParaPostScreen = () => {
+    navigation.navigate('Posts',{postId: post.id })
+  }
+
   return (
-    <View style={styles.container}>
+    <Pressable onPress={irParaPostScreen} style={styles.container}>
 
         {/*Titulo*/}
         <Image style={styles.image} source={{uri: post.image}}/>
@@ -22,7 +33,7 @@ const Post = (props) => {
           </Text>
         {/*Preço Total*/}
           <Text style={styles.precot}>€{post.precottl} Total</Text>
-    </View>
+    </Pressable>
   );
 };
 export default Post;
